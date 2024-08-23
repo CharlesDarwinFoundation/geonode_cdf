@@ -1,0 +1,86 @@
+{% extends "geonode-mapstore-client/snippets/custom_theme.html" %}
+{% block content %}
+<style>
+    /* main style */
+    /* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); */
+    .msgapi body {
+    /* font-family: "Raleway", sans-serif; */
+        font-size: 1.125rem;
+        line-height: 1.6;
+        font-style: normal;
+        font-weight: 500;
+        color: #626D6C;
+    }
+    #gn-brand-navbar {
+        background: rgba(233,233,232,.5);
+    }
+
+    /* hero */
+    .msgapi .gn-hero .jumbotron {
+        margin: 0 5% 0 0;
+        max-width: unset;
+        text-align: right;
+    }
+
+    /* navigation bar */
+    nav#gn-topbar {
+        background: #072c3f;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    nav#gn-topbar a, 
+    nav#gn-topbar .btn-primary {
+        background: #072c3f;
+        border: none;
+    }
+    nav#gn-topbar .dropdown.open .dropdown-menu {
+        color: white;
+        background: #072c3f;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    nav#gn-topbar .dropdown.open .dropdown-menu li a {
+        color: white;
+    }
+    .msgapi .gn-menu .gn-menu-list {
+        align-items: flex-end;
+    }
+
+    /* featured */
+    div#gn-home-featured-resources-grid {
+        margin-bottom: 1.5rem;
+    }
+    .gn-card-grid-pagination.featured-list {
+        margin-top: 1rem;
+    }
+
+    /* resources */
+    .msgapi .gn-catalogue .gn-card-grid {
+        padding-top: 2rem;
+    }
+    .msgapi .gn-card-grid .gn-card-grid-container>ul { 
+        justify-content: space-evenly;
+    }
+
+    /* cards */
+    .gn-resource-card-body-wrapper {
+        padding: 0.8rem 1rem;
+    }
+    .gn-container  .btn-primary,
+    #ms-container .btn-primary {
+        background: #ffc500;
+        color: #072c3f;
+        border: none;
+        border-radius: 3px;
+        font-weight: 600;
+    }
+    .gn-resource-card-body-wrapper .btn-primary {
+        background: #2c5f85;
+        color: white;
+    }
+    .msgapi .gn-resource-card .card-title a {
+        color: #072c3f;
+        font-weight: 600;
+    }
+</style>
+{% endblock %}
